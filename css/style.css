@@ -50,7 +50,7 @@ body {
 .site-header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #3A3054;
+  background-color: #026391;
 }
 
 .site-header__container {
@@ -85,15 +85,19 @@ body {
   align-items: center;
   min-width: 100px;
   padding: 5px 5px;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--white);
   text-decoration: none;
   border: 2px solid #3F51B5;
   border-radius: 6px;
-  transition: opacity 0.4s ease;
+  transition: color 0.4s ease, border 0.4s ease;
+  border: 2px solid #000;
 }
 
 .site-header__link:hover {
-  opacity: 0.6;
+  border: 2px solid var(--white);
+  color: #000;
 }
 
 .site-header__link-icon {
@@ -119,16 +123,13 @@ body {
 
 
 /* SITE-HERO */
-.site-hero {
-
-}
 .site-hero__container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 55px;
-  border-bottom: 4px solid var(--text-color);
+  border-bottom: 4px solid #000;
 }
 
 .hero-img-link {
@@ -145,8 +146,8 @@ body {
 }
 
 .site-hero-img:hover {
-  opacity: 0.8;
-  border: 2px solid crimson;
+  transform: scale(1.2);
+  transform: rotate(360deg);
 }
 
 .site-hero__block {
@@ -161,12 +162,15 @@ body {
   line-height: 16px;
   letter-spacing: 0.2px;
   font-weight: 700;
-  color: var(--text-color);
+  color: #000;
 }
+
 .site-hero__profession-text {
   margin: 0;
-  color: var(--text-color);
+  color: #000;
   font-weight: 700;
+  font-size: 28px;
+  line-height: 16px;
 }
 
 
@@ -177,11 +181,6 @@ body {
 
 .section-project__container {
   padding-bottom: 100px;
-}
-
-.section-project__title {
-  margin: 0;
-  text-align: center;
 }
 
 .section-project__title-block {
@@ -195,10 +194,9 @@ body {
   margin: 0;
   margin-right: 5px;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.11px;
-  box-shadow: -5px 9px 32px -1px rgba(0,0,0,0.75);
 }
 
 .section-project__icon {
@@ -260,7 +258,9 @@ body {
   text-align: right;
   margin: 0;
   margin-bottom: 26px;
-  color: var(--white);
+  color: #ccc7bd;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .section-project__block-link {
@@ -345,6 +345,11 @@ body {
   border-radius: 50px;
 }
 
+.footer__profil:hover {
+  transform: scale(1.2);
+  transform: rotate(360deg);
+}
+
 .footer__list {
   display: flex;
   align-items: center;
@@ -366,5 +371,5 @@ body {
 
 .footer__social-link:hover {
   transform: scale(1.2);
-
+  transform: rotate(360deg);
 }
